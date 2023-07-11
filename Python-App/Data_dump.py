@@ -6,7 +6,7 @@ import certifi
 
 #Provide the MongoDB Localhost URL to Connect Python to MongoDB.
 ca = certifi.where()
-client= pymongo.MongoClient("mongodb+srv://mongouser01:mongo123@cluster0.tlhouhq.mongodb.net/test", tlsCAFile=ca)
+client= pymongo.MongoClient("mongodb+srv://<user-name>:<password>@<cluster-name>.tlhouhq.mongodb.net/test", tlsCAFile=ca)
 
 DATA_FILE_PATH="D:\DevOps\Credit-Card\CreditCard.csv"
 DATABASE_NAME="CreditCard"
